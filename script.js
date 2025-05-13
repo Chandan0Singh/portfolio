@@ -1,67 +1,59 @@
-const menuBtn = document.getElementById('menuButton');
-    const mobileMenu = document.getElementById('mobileMenu');
+const modalOverlay = document.querySelector('.info-popup');
+const closeModal = document.getElementById('closeModal');
+const modalTitle = modalOverlay.querySelector('h2');
+const modalContent = modalOverlay.querySelector('p');
+const visitProjectBtn = document.getElementById('visitProject');
 
-    menuBtn.addEventListener('click', () => {
-      mobileMenu.classList.toggle('hidden');
-    });
-// Function to create circular progress
-function createCircularProgress(selector, valueSelector, color, endValue, speed) {
-  const progressElement = document.querySelector(selector);
-  const valueElement = document.querySelector(valueSelector);
-  let currentValue = 0;
+const readMoreLinks = document.querySelectorAll('.readmore');
 
-  const interval = setInterval(() => {
-    // Only increment if current value is less than the end value
-    if (currentValue < endValue) {
-      currentValue++;
-      valueElement.textContent = `${currentValue}%`;
-      progressElement.style.background = `conic-gradient(${color} ${currentValue * 3.6}deg, #ededed 0deg)`;
-    } else {
-      clearInterval(interval);  // Stop when target value is reached
-    }
-  }, speed);
-}
+const projectInfo = {
+  'Amazdraw': {
+    title: 'Amazdraw',
+    description: 'Amazdraw ek animation studio hai jo 2D animation, whiteboard animation, aur motion graphics mein expert hai. Yahaan aap animation aur illustration ke courses seekh sakte hain.',
+    link: 'https://amazdraw.com/'
+  },
+  'Task Manager': {
+    title: 'Task Manager',
+    description: 'Task Manager ek productivity tool hai jo tasks ko organize karne mein madad karta hai. Ismein task prioritization, deadlines, aur reminders jaise features hain.',
+    link: 'https://example.com/taskmanager'
+  },
+  'CokeCota': {
+    title: 'CokeCota',
+    description: 'CokeCota ek interactive animation page hai jo Coca-Cola ke branding aur storytelling ko showcase karta hai. Yahaan animation aur web design ka fusion dekha ja sakta hai.',
+    link: 'https://example.com/cokecota'
+  },
+  'Slider': {
+    title: 'Slider',
+    description: 'Slider ek image slider component hai jo HTML, CSS, aur JavaScript ka use karke banaya gaya hai. Yahaan aapko responsive design aur DOM manipulation ka idea milega.',
+    link: 'https://example.com/slider'
+  },
+  'Living-Eyesr': {
+    title: 'Living-Eyesr',
+    description: 'Living-Eyesr ek language translation web project hai jo real-time translation aur multilingual support provide karta hai.',
+    link: 'https://example.com/living-eyesr'
+  },
+  'Calculator': {
+    title: 'Calculator',
+    description: 'Calculator ek simple web-based calculator hai jo basic arithmetic operations perform karta hai. Yahaan aapko JavaScript ke basics samajhne ko milenge.',
+    link: 'https://example.com/calculator'
+  }
+};
 
-// === Initialize Progress Bars ===
-document.addEventListener("DOMContentLoaded", () => {
-  createCircularProgress(".html-css", ".html-progress", "#fca61f", 90, 30);
-  createCircularProgress(".javascript", ".javascript-progress", "#7d2ae8", 75, 30);
-  createCircularProgress(".php", ".php-progress", "#20c997", 80, 30);
-  createCircularProgress(".reactjs", ".reactjs-progress", "#3f396d", 30, 30);
-});
+readMoreLinks.forEach(link => {
+  link.addEventListener('click', (e) => {
+    e.preventDefault();
+    const card = link.closest('.post');
+    const cardTitle = card.querySelector('h4').textContent.trim();
 
-// === jQuery Filter Logic ===
-$(document).ready(function () {
-  $(".filter-item").click(function () {
-    const filter = $(this).data("filter");
-    if (filter === "all") {
-      $(".post").fadeIn(300);
-    } else {
-      $(".post").hide().filter(`.${filter}`).fadeIn(300);
+    if (projectInfo[cardTitle]) {
+      modalTitle.textContent = projectInfo[cardTitle].title;
+      modalContent.textContent = projectInfo[cardTitle].description;
+      visitProjectBtn.href = projectInfo[cardTitle].link;
+      modalOverlay.classList.remove('hidden');
     }
   });
 });
 
-// === Sticky Navbar ===
-document.addEventListener("DOMContentLoaded", () => {
-  const navbarTop = document.getElementById("navbar-top");
-
-  window.addEventListener("scroll", () => {
-    const isSticky = window.scrollY > 50;
-    navbarTop.classList.toggle("fixed-top", isSticky);
-
-    // Adjust the padding top of the body when navbar becomes sticky
-    document.body.style.paddingTop = isSticky ? `${navbarTop.offsetHeight}px` : "0";
-  });
-});
-
-// === Back to Top Button ===
-const backToTopBtn = document.getElementById("btn-back-to-top");
-
-window.addEventListener("scroll", () => {
-  backToTopBtn.style.display = (window.scrollY > 20) ? "block" : "none";
-});
-
-backToTopBtn.addEventListener("click", () => {
-  window.scrollTo({ top: 0, behavior: "smooth" });
+closeModal.addEventListener('click', () => {
+  modalOverlay.classList.add('hidden');
 });
