@@ -376,6 +376,27 @@ blogModalOverlay.addEventListener('click', (e) => {
   }
 });
 
+ const contactModalOverlay = document.getElementById('contactModalOverlay');
+  const openBtn = document.getElementById('openContactModal');
+  const closeBtn = document.getElementById('closeContactModal');
+
+  openBtn.addEventListener('click', () => {
+    contactModalOverlay.classList.remove('hidden');
+  });
+
+  closeBtn.addEventListener('click', () => {
+    contactModalOverlay.classList.add('hidden');
+  });
+
+  // Optional: Close modal if user clicks outside the form
+  contactModalOverlay.addEventListener('click', (e) => {
+    if (e.target === contactModalOverlay) {
+      contactModalOverlay.classList.add('hidden');
+    }
+  });
+
+
+
 
 // Skills data: selector and max %
     const skills = [
