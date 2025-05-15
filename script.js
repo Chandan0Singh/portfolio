@@ -4,6 +4,8 @@ const visitProjectBtn = document.getElementById('visitProject');
 const popupContainer = document.querySelector('.popup-container');
 const readMoreLinks = document.querySelectorAll('.readmore');
 
+
+
 const projectInfo = {
   'Amazdraw': {
     // title: 'AmazDraw Animation Studio',
@@ -217,3 +219,209 @@ readMoreLinks.forEach(link => {
 closeModal.addEventListener('click', () => {
   modalOverlay.classList.add('hidden');
 });
+
+// services-info---------------------------------------------------------------------------------------------------------------->>>>>>
+
+const servicesModalOverlay = document.querySelector('.info-services-popup');
+const closeServicesModal = document.getElementById('closeModal-services');
+const servicesPopupContainer = document.querySelector('.popup-services-container');
+const readMoreServicesLinks = document.querySelectorAll('.readmore-services');
+
+const servicesInfo = [
+  {
+    title: 'Web Design',
+    image: 'images/Designing.webp',
+    alt: 'Web Design',
+    description: 'Creating user-friendly and visually appealing website layouts using tools like Figma, HTML, and Tailwind CSS. Focus on UX/UI for optimal user engagement.',
+    content: `
+      <h2 class="text-2xl font-semibold text-center text-gray-800 mb-4">Web Design</h2>
+      <p class="text-gray-600 mb-4">Web Design is the process of conceptualizing, planning, and arranging content online. Today, designing a website goes beyond aesthetics to include the website’s overall functionality.</p>
+      <h3 class="text-xl font-semibold text-gray-800 mb-2">What I Offer:</h3>
+      <ul class="list-disc list-inside text-gray-600 mb-4">
+        <li>Responsive and modern layouts</li>
+        <li>User Interface (UI) and User Experience (UX) design</li>
+        <li>Design tools like Figma and Adobe XD</li>
+        <li>Design implementation using Tailwind CSS</li>
+      </ul>
+      <p class="text-gray-600">Good web design helps to keep visitors on your site, improves conversion, and builds trust with your audience.</p>
+    `
+  },
+  {
+    title: 'Web Development',
+    image: 'images/Developing.webp',
+    alt: 'Web Development',
+    description: 'Bringing designs to life with interactive, efficient, and scalable code using HTML, CSS, JavaScript, React, and backend APIs.',
+    content: `
+      <h2 class="text-2xl font-semibold text-center text-gray-800 mb-4">Web Development</h2>
+      <p class="text-gray-600 mb-4">Web development involves building and maintaining websites; it's the work that happens behind the scenes to make a website look great, work fast, and perform well with a seamless user experience.</p>
+      <h3 class="text-xl font-semibold text-gray-800 mb-2">What I Do:</h3>
+      <ul class="list-disc list-inside text-gray-600 mb-4">
+        <li>Frontend development using React, HTML, CSS, and JavaScript</li>
+        <li>Backend development with Node.js and Express</li>
+        <li>REST API integration and CRUD operations</li>
+        <li>Optimized, maintainable, and scalable code</li>
+      </ul>
+      <p class="text-gray-600">From landing pages to full-stack applications, I turn ideas into fully functional websites and apps.</p>
+    `
+  },
+  {
+    title: 'Debugging',
+    image: 'images/Debbuging.webp',
+    alt: 'Debugging',
+    description: 'Identifying and fixing issues in codebases using browser dev tools, logs, and debugging tools to ensure smooth app performance.',
+    content: `
+      <h2 class="text-2xl font-semibold text-center text-gray-800 mb-4">Debugging</h2>
+      <p class="text-gray-600 mb-4">Debugging is a critical skill in software development where code is analyzed and corrected to ensure functionality and performance meet expectations.</p>
+      <h3 class="text-xl font-semibold text-gray-800 mb-2">What I Solve:</h3>
+      <ul class="list-disc list-inside text-gray-600 mb-4">
+        <li>Fixing UI glitches and layout issues</li>
+        <li>Resolving JavaScript runtime errors</li>
+        <li>API integration bugs</li>
+        <li>Optimizing performance bottlenecks</li>
+      </ul>
+      <p class="text-gray-600">With thorough analysis and testing, I ensure code is robust, efficient, and error-free for production-ready deployment.</p>
+    `
+  }
+];
+
+readMoreServicesLinks.forEach(link => {
+  link.addEventListener('click', (e) => {
+    e.preventDefault();
+    const card = link.closest('div[data-aos]');  // changed from '.post' because cards don't have .post class in your markup
+    const cardTitle = card.querySelector('h4').textContent.trim();
+
+    // Find service info based on title
+    const service = servicesInfo.find(s => s.title === cardTitle);
+
+    if (service) {
+      servicesPopupContainer.innerHTML = service.content;
+      servicesModalOverlay.classList.remove('hidden');
+    }
+  });
+});
+
+closeServicesModal.addEventListener('click', () => {
+  servicesModalOverlay.classList.add('hidden');
+});
+
+
+
+// blog-popup------------------------------------------------------------------------------>>>>>>
+
+const blogModalOverlay = document.querySelector('.info-blog-popup');
+const closeBlogModal = document.getElementById('closeModal-blog');
+const blogPopupContainer = document.querySelector('.popup-blog-container');
+const readMoreBlogButtons = document.querySelectorAll('.readmore-blog');
+
+// Blog info data structure
+const blogInfo = {
+  '🧠 Understanding useEffect in React': {
+    content: `
+      <h2 class="text-2xl font-semibold text-center text-gray-800 mb-4">🧠 Understanding useEffect in React</h2>
+      <p class="text-gray-600 mb-4">React's <code>useEffect</code> hook gives functional components lifecycle powers. This article explains how it works, its syntax, dependency arrays, and cleanup functions.</p>
+      <h3 class="text-xl font-semibold text-gray-800 mb-2">Key Points:</h3>
+      <ul class="list-disc list-inside text-gray-600 mb-4">
+        <li>Understanding side effects in React</li>
+        <li>How to use useEffect properly</li>
+        <li>Cleanup to prevent memory leaks</li>
+        <li>Dependency array significance</li>
+      </ul>
+      <p class="text-gray-600">Mastering useEffect helps you write efficient and bug-free React components.</p>
+    `
+  },
+  '🔥 Top 5 VSCode Extensions Every Developer Should Have': {
+    content: `
+      <h2 class="text-2xl font-semibold text-center text-gray-800 mb-4">🔥 Top 5 VSCode Extensions Every Developer Should Have</h2>
+      <p class="text-gray-600 mb-4">Discover must-have VSCode extensions like Prettier, ESLint, GitLens, Bracket Pair Colorizer, and Live Server to boost your productivity and code quality.</p>
+      <h3 class="text-xl font-semibold text-gray-800 mb-2">Extensions Include:</h3>
+      <ul class="list-disc list-inside text-gray-600 mb-4">
+        <li>Prettier - Code formatter</li>
+        <li>ESLint - Linting and error checking</li>
+        <li>GitLens - Git supercharged</li>
+        <li>Bracket Pair Colorizer - Better bracket visibility</li>
+        <li>Live Server - Real-time preview</li>
+      </ul>
+      <p class="text-gray-600">These tools help maintain code quality and speed up development.</p>
+    `
+  },
+  '🤝 Let’s Connect!': {
+    content: `
+      <h2 class="text-2xl font-semibold text-center text-gray-800 mb-4">🤝 Let’s Connect!</h2>
+      <p class="text-gray-600 mb-4">Got ideas or feedback? Let's collaborate! Reach out on <a href="https://www.linkedin.com/in/chandan-singh-8735201b3/" class="text-indigo-600 underline">LinkedIn</a> or email me at <a href="mailto:code.chandansingh@gmail.com" class="text-indigo-600 underline">code.chandansingh@gmail.com</a>.</p>
+    `
+  }
+};
+
+// Add click event listeners for all Read More buttons
+readMoreBlogButtons.forEach(button => {
+  button.addEventListener('click', (e) => {
+    e.preventDefault();
+    const title = button.getAttribute('data-title');
+    if (blogInfo[title]) {
+      blogPopupContainer.innerHTML = blogInfo[title].content;
+      blogModalOverlay.classList.remove('hidden');
+    }
+  });
+});
+
+// Close modal on close button click
+closeBlogModal.addEventListener('click', () => {
+  blogModalOverlay.classList.add('hidden');
+});
+
+// Optional: Close modal when clicking outside modal content
+blogModalOverlay.addEventListener('click', (e) => {
+  if (e.target === blogModalOverlay) {
+    blogModalOverlay.classList.add('hidden');
+  }
+});
+
+
+// Skills data: selector and max %
+    const skills = [
+      { selector: 'html-progress', max: 100 },
+      { selector: 'javascript-progress', max: 80 },
+      { selector: 'php-progress', max: 80 },
+      { selector: 'reactjs-progress', max: 40 },
+    ];
+
+    // Animate count from 0 to max for an element
+    function animateCount(el, max) {
+      let current = 0;
+      const increment = Math.ceil(max / 100); // speed of increment
+
+      const interval = setInterval(() => {
+        current += increment;
+        if (current >= max) {
+          current = max;
+          clearInterval(interval);
+        }
+        el.textContent = current + '%';
+      }, 10); // update every 20ms
+    }
+
+    // Intersection Observer callback
+    function onIntersection(entries, observer) {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          const span = entry.target.querySelector('span');
+          if (!span) return;
+
+          // Find skill based on class list
+          const skill = skills.find(s => span.classList.contains(s.selector));
+          if (skill) {
+            animateCount(span, skill.max);
+            observer.unobserve(entry.target); // stop observing after animation
+          }
+        }
+      });
+    }
+
+    // Setup Intersection Observer
+    const observerOptions = { threshold: 0.5 };
+    const observer = new IntersectionObserver(onIntersection, observerOptions);
+
+    // Observe each skill item container
+    document.querySelectorAll('.skill-item').forEach(skillEl => {
+      observer.observe(skillEl);
+    });
