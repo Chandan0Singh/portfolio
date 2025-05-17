@@ -453,3 +453,16 @@ blogModalOverlay.addEventListener('click', (e) => {
     document.querySelectorAll('.skill-item').forEach(skillEl => {
       observer.observe(skillEl);
     });
+
+
+
+
+
+    // nav--------------------------------------------------------------------------------------->>>>>>
+
+    const menuButton = document.getElementById('menuButton');
+  const mobileMenu = document.getElementById('mobileMenu');
+
+  menuButton.addEventListener('click', () => {
+    mobileMenu.classList.toggle('hidden');
+  });
