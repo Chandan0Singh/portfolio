@@ -14,6 +14,7 @@
     crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <link rel="shortcut icon" type="image/x-icon" href="./images/banner-01.webp">
   <style>
     body {
       font-family: 'Josefin Sans', sans-serif;
@@ -37,7 +38,7 @@
       </div>
 
       <!-- Desktop Contact Button -->
-      <button class="hidden md:block bg-orange-400 text-white px-5 py-2 rounded-full"><a
+      <button class="hidden md:block bg-orange-400 text-white px-5 py-2 rounded-full hover:bg-orange-500"><a
           href="tel:+91 8860968260">Contact Me</a>
       </button>
 
@@ -48,7 +49,7 @@
     </div>
 
     <!-- Mobile Dropdown Menu -->
-    <div id="mobileMenu" class="md:hidden hidden px-4 pb-4">
+    <!-- <div id="mobileMenu" class="md:hidden hidden px-4 pb-4">
       <div class="flex flex-col gap-3 text-lg">
         <a href="#home" class="hover:text-orange-500">Home</a>
         <a href="#service" class="hover:text-orange-500">Service</a>
@@ -56,9 +57,9 @@
         <a href="#portfolio" class="hover:text-orange-500">Portfolio</a>
         <a href="#testimonial" class="hover:text-orange-500">Testimonials</a>
         <a href="#blog" class="hover:text-orange-500">Blog</a>
-        <button class="bg-orange-400 text-white px-5 py-2 rounded-full w-fit">Contact</button>
+        <button class="bg-orange-400 text-white px-5 py-2 rounded-full w-fit ">Contact</button>
       </div>
-    </div>
+    </div> -->
   </nav>
 
   <main>
@@ -256,8 +257,8 @@
         <div class="post all bg-white shadow-lg rounded-lg overflow-hidden" data-aos="fade-up">
           <img src="images/living-Eyes.webp" alt="Lang Translator" class="w-full h-48 object-cover">
           <div class="p-4 text-center">
-            <h4 class="text-xl font-semibold">Living-Eyesr</h4>
-            <div class="text-sm text-gray-600 mb-2">HTML&CSS | JavaScript | Web Project</div>
+            <h4 class="text-xl font-semibold">Living-Eyes</h4>
+            <div class="text-sm text-gray-600 mb-2">HTML&Tailwind | JavaScript | Web Project</div>
             <a href="#" class="text-indigo-500 hover:underline readmore">Read More</a>
           </div>
         </div>
@@ -266,7 +267,7 @@
           <img src="images/calculator.webp" alt="TinyJS projec" class="w-full h-48 object-cover">
           <div class="p-4 text-center">
             <h4 class="text-xl font-semibold">Calculator</h4>
-            <div class="text-sm text-gray-600 mb-2">HTML&CSS | JavaScript | Web Project</div>
+            <div class="text-sm text-gray-600 mb-2">HTML&Tailwind | JavaScript | Web Project</div>
             <a href="#" class="text-indigo-500 hover:underline readmore">Read More</a>
           </div>
         </div>
@@ -420,14 +421,14 @@
 
     <!-- popups-------------------------------------------------------------------------------------------------------------------------------->
     <section class="fixed inset-0 bg-white/30 backdrop-blur-md flex justify-center items-center z-50 info-popup hidden">
-      <div class="bg-white rounded-lg shadow-lg max-w-[80vw] min-w-[40vw] p-6 relative">
+      <div class="bg-white rounded-lg shadow-lg max-w-[80vw] max-h-[95vh] overflow-auto min-w-[40vw] p-6 relative">
         <div class="popup-container"></div>
         <div class="flex justify-evenly">
           <a id="visitProject" href="#" target="_blank"
             class="inline-block bg-indigo-500 mt-4 text-white px-4 py-2 rounded hover:text-black mb-4 bg-orange-400 text-white px-5 py-2 rounded-full">Visit
             Project</a>
         </div>
-        <button id="closeModal" class="absolute top-3 right-3 text-gray-500 hover:text-gray-700">✕</button>
+        <button id="closeModal" class="absolute top-3 right-3 text-gray-500 hover:text-gray-700 absolute top-4 right-4 text-4xl">&times;</button>
       </div>
     </section>
 

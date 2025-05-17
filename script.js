@@ -47,7 +47,7 @@ const projectInfo = {
     `,
     link: 'https://example.com/taskmanager'
   },
-  'CokeCota': {
+  'Coca-Cola': {
     title: 'CokeCota',
     content: `
   <h2 class="text-2xl font-semibold text-center text-gray-800 mb-4">Coca-Cola Animated Advertisement</h2>
@@ -82,7 +82,7 @@ const projectInfo = {
     This project showcases a creative approach to advertising using web technologies. By combining HTML, Tailwind CSS, and JavaScript, it delivers an interactive and visually appealing representation of the Coca-Cola brand, demonstrating proficiency in modern web development practices.
   </p>
 `,
-    link: 'https://example.com/cokecota'
+    link: 'https://relaxed-bavarois-cdef36.netlify.app/'
   },
   'Slider': {
     title: 'Slider',
@@ -122,83 +122,90 @@ const projectInfo = {
   <p class="text-gray-600">
     This project demonstrates an animated image slider using HTML, Tailwind CSS, and JavaScript. It highlights user interaction with arrow navigation and time-based autoplay, making it a compelling UI element for showcasing content.
   </p>`,
-    link: 'https://example.com/slider'
+    link: 'https://shiny-melba-17d763.netlify.app/'
   },
-  'Living-Eyesr': {
+  'Living-Eyes': {
     title: 'Living-Eyesr',
-    content: `<h2 class="text-2xl font-semibold text-center text-gray-800 mb-4">Interactive Circular Face with Eye-Tracking</h2>
-  <p class="text-gray-600 mb-4">
-    An engaging web animation featuring a circular face with eyes that dynamically follow the user's cursor movements. This interactive design creates a playful and immersive user experience.
-  </p>
-  <h3 class="text-xl font-semibold text-gray-800 mb-2">Key Features:</h3>
-  <ul class="list-disc list-inside text-gray-600 mb-4">
-    <li>Responsive circular face design with proportional eyes</li>
-    <li>Real-time eye movement tracking based on cursor position</li>
-    <li>Smooth and natural animation transitions</li>
-    <li>Enhanced user engagement through interactive visuals</li>
-  </ul>
-  <h3 class="text-xl font-semibold text-gray-800 mb-2">Technologies Used:</h3>
-  <ul class="list-disc list-inside text-gray-600 mb-4">
-    <li>HTML5 for semantic structure</li>
-    <li>Tailwind CSS for utility-first styling and responsive design</li>
-    <li>JavaScript for real-time cursor tracking and DOM manipulation</li>
-  </ul>
-  <h3 class="text-xl font-semibold text-gray-800 mb-2">Responsive Design:</h3>
-  <p class="text-gray-600 mb-4">
-    The animation is fully responsive, ensuring consistent behavior and appearance across various devices and screen sizes.
-  </p>
-  <h3 class="text-xl font-semibold text-gray-800 mb-2">Performance & Aesthetics:</h3>
-  <ul class="list-disc list-inside text-gray-600 mb-4">
-    <li>Optimized JavaScript for smooth performance without lag</li>
-    <li>Clean and minimalistic design focusing on user interaction</li>
-    <li>Consistent color scheme enhancing visual appeal</li>
-  </ul>
-  <h3 class="text-xl font-semibold text-gray-800 mb-2">Project Overview:</h3>
-  <p class="text-gray-600">
-    This project demonstrates the effective use of web technologies to create an interactive and visually appealing animation. By combining HTML, Tailwind CSS, and JavaScript, it showcases the ability to enhance user experience through dynamic and responsive design elements.
-  </p>`,
-    link: 'https://example.com/living-eyesr'
+    content: `<h2 class="text-2xl font-semibold text-center text-gray-800 mb-4">👀 Eye Tracker – Project Overview</h2>
+<p class="text-gray-600 mb-4">
+  This project is a fun and interactive browser-based Eye Tracker that makes cartoon-style eyes follow the user's cursor in real time. It's built using HTML, Tailwind CSS, and JavaScript to ensure both responsiveness and performance.
+</p>
+
+<h3 class="text-xl font-semibold text-gray-800 mb-2">🔧 Key Features</h3>
+<ul class="list-disc list-inside text-gray-600 mb-4">
+  <li><strong>Interactive Eye Movement:</strong> Both eyes smoothly follow the cursor based on its X and Y position.</li>
+  <li><strong>Responsive Design:</strong> The layout adjusts to fit all screen sizes, from mobile phones to desktops.</li>
+  <li><strong>Smooth Animation:</strong> Subtle and natural movement animations make the interaction feel fluid.</li>
+  <li><strong>Minimal Design:</strong> Clean UI using Tailwind CSS ensures a visually pleasant experience.</li>
+</ul>
+
+<h3 class="text-xl font-semibold text-gray-800 mb-2">🛠️ Technologies Used</h3>
+<ul class="list-disc list-inside text-gray-600 mb-4">
+  <li><strong>HTML5:</strong> To structure the face and eye elements semantically.</li>
+  <li><strong>Tailwind CSS:</strong> For responsive, utility-first design and styling.</li>
+  <li><strong>JavaScript:</strong> For handling real-time mouse tracking and pupil movement.</li>
+</ul>
+
+<h3 class="text-xl font-semibold text-gray-800 mb-2">📱 Responsive Design</h3>
+<p class="text-gray-600 mb-4">
+  The layout is fully responsive, ensuring the eyes scale properly on all screen sizes while maintaining the center-focused face design.
+</p>
+
+<h3 class="text-xl font-semibold text-gray-800 mb-2">🎨 Performance & Aesthetics</h3>
+<ul class="list-disc list-inside text-gray-600 mb-4">
+  <li><strong>Smooth Transitions:</strong> Pupil movement uses transition effects for fluid motion.</li>
+  <li><strong>Simple Layout:</strong> Uses minimal elements to keep rendering fast and the UI clean.</li>
+  <li><strong>Fun Visual:</strong> Gives a cartoon-like experience while demonstrating DOM manipulation skills.</li>
+</ul>
+
+<h3 class="text-xl font-semibold text-gray-800 mb-2">📎 Project Summary</h3>
+<p class="text-gray-600">
+  The Eye Tracker project is a creative demonstration of real-time user interaction using DOM manipulation and CSS transforms. With lightweight code and smooth responsiveness, it’s a great example of mixing animation, interactivity, and responsiveness in a simple UI.
+</p>
+`,
+    link: 'https://luxury-pie-706b4b.netlify.app/'
   },
   'Calculator': {
     title: 'Calculator',
-    content: `<h2 class="text-2xl font-semibold text-center text-gray-800 mb-4">🧮 Mac-Style Calculator – Project Overview</h2>
-  <p class="text-gray-600 mb-4">
-    This project showcases a web-based calculator designed to emulate the sleek and functional interface of the macOS calculator app. 
-    Built using HTML, Tailwind CSS, and JavaScript, it offers a responsive and interactive user experience.
-  </p>
-  
-  <h3 class="text-xl font-semibold text-gray-800 mb-2">🔧 Key Features</h3>
-  <ul class="list-disc list-inside text-gray-600 mb-4">
-    <li><strong>Authentic macOS Design:</strong> Mimics the appearance and layout of the native macOS calculator, providing users with a familiar interface.</li>
-    <li><strong>Responsive Layout:</strong> Ensures optimal usability across various devices, adjusting seamlessly to different screen sizes.</li>
-    <li><strong>Interactive Buttons:</strong> Each button provides immediate visual feedback upon interaction, enhancing user engagement.</li>
-    <li><strong>Functional Operations:</strong> Supports basic arithmetic operations, allowing users to perform calculations efficiently.</li>
-  </ul>
+    content: `<h2 class="text-2xl font-semibold text-center text-gray-800 mb-4">🧮 Gradient Scientific Calculator – Project Overview</h2>
+<p class="text-gray-600 mb-4">
+  This project is a modern web-based scientific calculator featuring a sleek gradient background and advanced math functions. Developed using HTML, Tailwind CSS, and JavaScript, it combines vibrant UI design with interactive and functional features.
+</p>
 
-  <h3 class="text-xl font-semibold text-gray-800 mb-2">🛠️ Technologies Used</h3>
-  <ul class="list-disc list-inside text-gray-600 mb-4">
-    <li><strong>HTML5:</strong> For structuring the calculator's layout and elements.</li>
-    <li><strong>Tailwind CSS:</strong> For utility-first styling, enabling rapid and responsive design.</li>
-    <li><strong>JavaScript:</strong> For implementing the calculator's functionality and interactivity.</li>
-  </ul>
+<h3 class="text-xl font-semibold text-gray-800 mb-2">🔧 Key Features</h3>
+<ul class="list-disc list-inside text-gray-600 mb-4">
+  <li><strong>Scientific Mode:</strong> Toggle scientific functions such as sin, cos, tan, log, ln, square root, square, and reciprocal.</li>
+  <li><strong>Interactive Interface:</strong> Buttons react visually when pressed, improving usability and providing clear feedback.</li>
+  <li><strong>Real-Time Calculation:</strong> Displays instant results as users type equations, offering a dynamic experience.</li>
+  <li><strong>Toggleable Layout:</strong> Scientific keys are hidden by default and can be shown or hidden with a toggle button.</li>
+  <li><strong>Keyboard-Free Input:</strong> Entirely button-based, making it ideal for touch devices as well as desktops.</li>
+</ul>
 
-  <h3 class="text-xl font-semibold text-gray-800 mb-2">📱 Responsive Design</h3>
-  <p class="text-gray-600 mb-4">
-    The calculator's design adapts to various screen sizes, ensuring a consistent and user-friendly experience on desktops, tablets, and mobile devices.
-  </p>
+<h3 class="text-xl font-semibold text-gray-800 mb-2">🛠️ Technologies Used</h3>
+<ul class="list-disc list-inside text-gray-600 mb-4">
+  <li><strong>HTML5:</strong> To build a structured and accessible calculator interface.</li>
+  <li><strong>Tailwind CSS:</strong> For fast, utility-first styling and a beautiful responsive gradient layout.</li>
+  <li><strong>JavaScript:</strong> To implement the core calculator logic and handle scientific operations securely.</li>
+</ul>
 
-  <h3 class="text-xl font-semibold text-gray-800 mb-2">🎨 Performance & Aesthetics</h3>
-  <ul class="list-disc list-inside text-gray-600 mb-4">
-    <li><strong>Smooth Transitions:</strong> Utilizes Tailwind's transition utilities to provide fluid animations for button presses.</li>
-    <li><strong>Clean Typography:</strong> Employs clear and legible fonts, enhancing readability and user experience.</li>
-    <li><strong>Consistent Color Scheme:</strong> Adheres to a neutral palette reminiscent of macOS aesthetics, ensuring visual harmony.</li>
-  </ul>
+<h3 class="text-xl font-semibold text-gray-800 mb-2">📱 Responsive Design</h3>
+<p class="text-gray-600 mb-4">
+  The calculator is designed to look and work great on all screen sizes, adjusting the layout and button spacing smoothly across mobile, tablet, and desktop views.
+</p>
 
-  <h3 class="text-xl font-semibold text-gray-800 mb-2">📎 Project Overview</h3>
-  <p class="text-gray-600">
-    This Mac-style calculator project demonstrates proficiency in modern web development practices. By combining semantic HTML, utility-first CSS with Tailwind, and interactive JavaScript, it delivers a functional and visually appealing application that enhances user experience through dynamic and responsive design elements.
-  </p>`,
-    link: 'https://example.com/calculator'
+<h3 class="text-xl font-semibold text-gray-800 mb-2">🎨 Performance & Aesthetics</h3>
+<ul class="list-disc list-inside text-gray-600 mb-4">
+  <li><strong>Gradient Background:</strong> Uses a colorful linear gradient to provide a vibrant and modern feel.</li>
+  <li><strong>Rounded UI Components:</strong> Fully rounded buttons and containers create a friendly, soft appearance.</li>
+  <li><strong>Smooth Transitions:</strong> Button clicks and toggle effects enhance the overall user experience.</li>
+</ul>
+
+<h3 class="text-xl font-semibold text-gray-800 mb-2">📎 Project Overview</h3>
+<p class="text-gray-600">
+  This calculator project showcases an effective blend of design and functionality. Featuring both standard and scientific operations, it demonstrates practical frontend skills and thoughtful UI design using Tailwind CSS and vanilla JavaScript. Its responsive and modern look makes it a great example of interactive web tools.
+</p>
+`,
+    link: 'https://strong-gelato-5fecb7.netlify.app/'
   }
 };
 
