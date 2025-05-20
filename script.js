@@ -466,3 +466,12 @@ blogModalOverlay.addEventListener('click', (e) => {
   menuButton.addEventListener('click', () => {
     mobileMenu.classList.toggle('hidden');
   });
+
+  window.addEventListener('load', function () {
+    setTimeout(() => {
+      AOS.init({
+        duration: 600,
+        once: true,
+      });
+    }, 500); // Hero load ke baad delay se AOS chale
+  });
