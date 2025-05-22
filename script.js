@@ -467,3 +467,24 @@ blogModalOverlay.addEventListener('click', (e) => {
     mobileMenu.classList.toggle('hidden');
   });
 
+
+
+      // aos block-------------------------------------------------------------------------------------->>>>>>
+
+      if(window.innerWidth < 768){
+        const heroImg = document.querySelector('.hero-banner-container')
+        if(heroImg){
+          heroImg.removeAttribute('data-aos')
+        }
+      }
+
+      const heroText = document.querySelector('#home [data-aos="fade-right"]');
+    if (heroText) {
+      heroText.removeAttribute('data-aos');
+    }
+
+      AOS.init({
+    once: true,
+  });
+ 
+
