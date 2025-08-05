@@ -42,10 +42,46 @@ const projectInfo = {
   'Task Manager': {
     title: 'Task Manager',
     content: `
-      <h2 class="text-2xl font-semibold text-center text-gray-800 mb-4">Task Manager</h2>
-      <p class="text-gray-600 mb-4">Task Manager एक productivity tool है जो tasks को organize करने में मदद करता है। इसमें task prioritization, deadlines, और reminders जैसे features हैं।</p>
+      <h2 class="text-2xl font-semibold text-center text-gray-800 mb-2">AmazDraw Animation Studio</h2>
+  <p class="text-center text-sm text-red-500 mb-4">Please visit only in working hours</p>
+  
+  <p class="text-gray-600 mb-4">
+    A professional animation studio website built for AmazDraw (est. 2019), offering 2D animation, whiteboard videos, and training programs.
+  </p>
+
+  <h3 class="text-lg font-semibold text-gray-800 mb-1">Website Features:</h3>
+  <ul class="list-disc list-inside text-gray-600 mb-4">
+    <li>Responsive layout with Tailwind CSS</li>
+    <li>Service details and project gallery</li>
+    <li>PHP Mailer contact form</li>
+  </ul>
+
+  <h3 class="text-lg font-semibold text-gray-800 mb-1">Task Manager System:</h3>
+  <p class="text-gray-600 mb-2">
+    A custom tool I developed to manage internal team workflow. Seniors can assign tasks, set deadlines, and track progress. Juniors can start, pause, or mark tasks as done. Late tasks are flagged automatically.
+  </p>
+
+  <ul class="list-disc list-inside text-gray-600 mb-4">
+    <li>Role-based access control</li>
+    <li>Real-time task updates</li>
+    <li>Built using HTML, Tailwind, JavaScript, PHP & MySQL</li>
+  </ul>
+
+  <p class="text-gray-600">
+    This project demonstrates my full-stack development skills and practical UI/UX thinking in a real work environment.
+  </p>
     `,
-    link: 'https://example.com/taskmanager'
+    link: 'https://www.amazdraw.in/'
+  },'Aliyana Luxe': {
+    title: 'Aliyana Luxe',
+    content: `
+      <h2 class="text-2xl font-semibold text-center text-gray-800 mb-4">Aliyana Luxe</h2>
+      <p class="text-gray-600 mb-4">
+  Currently working on a handbag e-commerce website, which is still under development. The project is marked as "In Process" and will be launched soon.
+</p>
+
+    `,
+    link: 'https://strong-gelato-5fecb7.netlify.app/'
   },
   'Coca-Cola': {
     title: 'CokeCota',
@@ -164,48 +200,6 @@ const projectInfo = {
 </p>
 `,
     link: 'https://luxury-pie-706b4b.netlify.app/'
-  },
-  'Calculator': {
-    title: 'Calculator',
-    content: `<h2 class="text-2xl font-semibold text-center text-gray-800 mb-4">🧮 Gradient Scientific Calculator – Project Overview</h2>
-<p class="text-gray-600 mb-4">
-  This project is a modern web-based scientific calculator featuring a sleek gradient background and advanced math functions. Developed using HTML, Tailwind CSS, and JavaScript, it combines vibrant UI design with interactive and functional features.
-</p>
-
-<h3 class="text-xl font-semibold text-gray-800 mb-2">🔧 Key Features</h3>
-<ul class="list-disc list-inside text-gray-600 mb-4">
-  <li><strong>Scientific Mode:</strong> Toggle scientific functions such as sin, cos, tan, log, ln, square root, square, and reciprocal.</li>
-  <li><strong>Interactive Interface:</strong> Buttons react visually when pressed, improving usability and providing clear feedback.</li>
-  <li><strong>Real-Time Calculation:</strong> Displays instant results as users type equations, offering a dynamic experience.</li>
-  <li><strong>Toggleable Layout:</strong> Scientific keys are hidden by default and can be shown or hidden with a toggle button.</li>
-  <li><strong>Keyboard-Free Input:</strong> Entirely button-based, making it ideal for touch devices as well as desktops.</li>
-</ul>
-
-<h3 class="text-xl font-semibold text-gray-800 mb-2">🛠️ Technologies Used</h3>
-<ul class="list-disc list-inside text-gray-600 mb-4">
-  <li><strong>HTML5:</strong> To build a structured and accessible calculator interface.</li>
-  <li><strong>Tailwind CSS:</strong> For fast, utility-first styling and a beautiful responsive gradient layout.</li>
-  <li><strong>JavaScript:</strong> To implement the core calculator logic and handle scientific operations securely.</li>
-</ul>
-
-<h3 class="text-xl font-semibold text-gray-800 mb-2">📱 Responsive Design</h3>
-<p class="text-gray-600 mb-4">
-  The calculator is designed to look and work great on all screen sizes, adjusting the layout and button spacing smoothly across mobile, tablet, and desktop views.
-</p>
-
-<h3 class="text-xl font-semibold text-gray-800 mb-2">🎨 Performance & Aesthetics</h3>
-<ul class="list-disc list-inside text-gray-600 mb-4">
-  <li><strong>Gradient Background:</strong> Uses a colorful linear gradient to provide a vibrant and modern feel.</li>
-  <li><strong>Rounded UI Components:</strong> Fully rounded buttons and containers create a friendly, soft appearance.</li>
-  <li><strong>Smooth Transitions:</strong> Button clicks and toggle effects enhance the overall user experience.</li>
-</ul>
-
-<h3 class="text-xl font-semibold text-gray-800 mb-2">📎 Project Overview</h3>
-<p class="text-gray-600">
-  This calculator project showcases an effective blend of design and functionality. Featuring both standard and scientific operations, it demonstrates practical frontend skills and thoughtful UI design using Tailwind CSS and vanilla JavaScript. Its responsive and modern look makes it a great example of interactive web tools.
-</p>
-`,
-    link: 'https://strong-gelato-5fecb7.netlify.app/'
   }
 };
 
@@ -401,9 +395,6 @@ blogModalOverlay.addEventListener('click', (e) => {
       contactModalOverlay.classList.add('hidden');
     }
   });
-
-
-
 
 // Skills data: selector and max %
     const skills = [
